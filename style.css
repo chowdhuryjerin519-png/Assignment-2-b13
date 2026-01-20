@@ -170,7 +170,8 @@ p {
 .about {
   align-items: center;
   text-align: center;
-  margin: 80px;
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
 .about-text {
   line-height: 25px;
@@ -206,14 +207,22 @@ p {
   width: 30px;
   margin-bottom: 15px;
 }
+.unique {
+  font-size: 40px;
+  background: linear-gradient(90deg, #f034b7, #a446f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
 .feature-card {
   background: var(--card-bg);
-  padding: 40px;
+  padding: 30px;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
 }
 
+/* Episodes Section */
 .episodes-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -222,9 +231,28 @@ p {
 .episode-card {
   background: var(--card-bg);
   border-radius: 20px;
+
   overflow: hidden;
 }
-
+/* Alex Kumer */
+.host {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+.host-icon :hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.card-content {
+  padding: 12px;
+}
+.duration {
+  color: var(--accent-green);
+}
 .host-card {
   background: var(--card-bg);
   padding: 40px;
@@ -241,15 +269,70 @@ p {
 }
 
 .footer {
-  padding: 60px 0;
+  background: url("assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+  padding: 80px 20px;
+  color: #fff;
   text-align: center;
-  border-top: 1px solid #332152;
 }
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-logo {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-logo span {
+  color: #ff3dbb;
+}
+
 .footer-platforms {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 20px 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+.left-5 {
+  margin-right: 5px;
+}
+.flex-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.footer-platforms span {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.flex-footer :hover {
+  color: #ff3dbb;
+}
+
+.copyright {
+  font-size: 12px;
+  opacity: 0.6;
 }
 
 /* --- RESPONSIVE BREAKPOINTS --- */
