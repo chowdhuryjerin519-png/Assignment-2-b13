@@ -7,7 +7,10 @@
   --text-dim: #b0a3c4;
   --accent-green: #00ff88;
 }
-
+.pragraph {
+  color: rgb(236, 214, 214);
+  margin-top: 10px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -326,7 +329,7 @@ p {
   transition: 0.3s;
 }
 
-.flex-footer :hover {
+.flex-footer:hover {
   color: #ff3dbb;
 }
 
